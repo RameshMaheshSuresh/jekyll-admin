@@ -16,7 +16,7 @@ import { preventDefault } from '../../utils/helpers';
 
 export class Configuration extends Component {
   state = {
-    guiView: false,
+    guiView: true,
   };
 
   componentDidMount() {
@@ -92,10 +92,11 @@ export class Configuration extends Component {
             content && (
               <div className="content-body">
                 <div className="warning">
-                  CAUTION! Any existing comments and formatting will be lost
-                  when editing via this view. Switch to the{' '}
-                  <strong>Raw Editor</strong> to preserve comments and
-                  formatting.
+
+                CAUTION! Any existing comments and formatting will be lost
+                when editing via this view. Switch to the{' '}
+                <strong>Raw Editor</strong> to preserve comments and
+                formatting.
                 </div>
                 <DataGUI fields={content} dataview />
               </div>
